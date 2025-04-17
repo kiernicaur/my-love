@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hi Love</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #e6e8ff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    #loveText {
+      font-size: 36px;
+      color: #5e6efa;
+      cursor: pointer;
+      padding: 40px 60px;
+      border: 2px solid #c689f8;
+      border-radius: 20px;
+      background-color: #ffe6eb;
+      transition: all 0.3s ease;
+    }
+
+    #loveText:hover {
+      background-color: #b9d6fc;
+    }
+
+    #heart {
+      font-size: 60px;
+      color: rgb(204, 58, 58);
+      animation: pulse 1s infinite;
+      margin-top: 10px;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.3); opacity: 0.7; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    #message {
+      margin-top: 30px;
+      font-size: 28px;
+      color: #7f63fd;
+      display: none; /* hide at start */
+    }
+
+    #spotify-link {
+      margin-top: 20px;
+    }
+
+    #spotify-link a {
+      font-size: 20px;
+      color: #3ebe6b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #spotify-link a:hover {
+      color: #1ed760;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="loveText" onclick="showMessage()">
+    Hi love!!
+    <div id="heart">❤️</div>
+  </div>
+
+  <div id="message">I love you ❤️</div>
+
+  <div id="spotify-link">
+    <a href="https://open.spotify.com/track/2rhIIx5fIJ6AFRSwFpQsCh?si=f8c28e910a9f4cd5" target="_blank">
+      i hope this song speaks to ur soul from mine
+    </a>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('message').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
